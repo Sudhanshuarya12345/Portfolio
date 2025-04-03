@@ -7,7 +7,7 @@ const HeroSec = () => {
             <div className="container w-full flex flex-col lg:flex-row items-center bg-gray-800 mx-auto p-10 rounded-lg shadow-2xl border border-gray-700">
                 {/* Text Content */}
                 <div className="text-center lg:text-left lg:w-1/2">
-                    <h2 className="text-4xl font-bold text-gray-300 animate-fadeIn">Hello, I'm</h2>
+                    <h2 className="text-4xl font-bold text-gray-300 animate-fadeIn">Hello, I&apos;m</h2>
                     <h1 className="text-6xl font-extrabold bg-gradient-to-r from-blue-400 via-purple-500 text-transparent bg-clip-text mt-2 animate-pulse">
                         Sudhanshu Kumar
                     </h1>
