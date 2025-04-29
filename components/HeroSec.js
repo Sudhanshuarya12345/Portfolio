@@ -22,7 +22,7 @@ const HeroSec = () => {
 
                     {/* Call to Action Button */}
                     <button className="mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full font-semibold hover:from-purple-600 hover:to-blue-500 transition duration-300 shadow-lg transform hover:scale-105">
-                        <a href="/CV.pdf" download="CV.pdf">
+                        <a href="/Resume 29 Apr 2025.pdf" download="CV.pdf">
                             Download CV
                         </a> 
                     </button>
