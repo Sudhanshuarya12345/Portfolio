@@ -85,7 +85,7 @@ const HeroSection = () => {
                     <div className="group relative rounded-[2rem] bg-gradient-to-br from-blue-500 via-sky-400 to-teal-400 p-[3px] shadow-2xl shadow-blue-300/40 transition duration-500 hover:-translate-y-1">
                         <div className="relative overflow-hidden rounded-[1.8rem] bg-white p-2">
                             <Image
-                                src='/images/my-image.png'
+                                src='/images/WhatsApp Image 2026-01-29 at 3.14.11 AM.jpeg'
                                 alt="Sudhanshu Kumar portrait"
                                 width={380}
                                 height={480}

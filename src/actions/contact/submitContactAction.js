@@ -143,7 +143,7 @@ export const submitAction = async (_prevState, formData) => {
 
         return {
             ok: true,
-            message: "Message sent successfully to your email.",
+            message: "Message sent successfully.",
         };
     } catch (error) {
         const details = error?.message || "Unknown SMTP error";
