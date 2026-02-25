@@ -1,3 +1,87 @@
 @import "tailwindcss";
 
+:root {
+  --bg-1: #f7f8fc;
+  --bg-2: #eef2ff;
+  --bg-3: #eefbf7;
+  --surface: rgba(255, 255, 255, 0.88);
+  --surface-border: rgba(90, 120, 190, 0.24);
+  --text: #1b2b48;
+  --muted: #5f6f8a;
+  --primary: #2364ff;
+  --primary-2: #0aa88a;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 12% 14%, rgba(35, 100, 255, 0.15), transparent 35%),
+    radial-gradient(circle at 88% 18%, rgba(10, 168, 138, 0.13), transparent 30%),
+    radial-gradient(circle at 78% 82%, rgba(255, 142, 95, 0.1), transparent 32%),
+    repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0) 0,
+      rgba(255, 255, 255, 0) 12px,
+      rgba(111, 145, 255, 0.035) 12px,
+      rgba(111, 145, 255, 0.035) 13px
+    ),
+    linear-gradient(150deg, var(--bg-1), var(--bg-2) 45%, var(--bg-3));
+  background-attachment: fixed;
+}
+
+.section-card {
+  border: 1px solid var(--surface-border);
+  background: var(--surface);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 14px 36px rgba(56, 72, 125, 0.12);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.section-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(67, 126, 235, 0.38);
+  box-shadow: 0 20px 42px rgba(56, 72, 125, 0.16);
+}
+
+.section-shell {
+  scroll-margin-top: 6rem;
+  border-radius: 1rem;
+  padding: 2.25rem 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .section-shell {
+    padding: 2.5rem;
+  }
+}
+
+.skills-fade {
+  animation: skillsFade 0.45s ease;
+}
+
+@keyframes skillsFade {
+  from {
+    opacity: 0.35;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
