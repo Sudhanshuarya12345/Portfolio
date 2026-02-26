@@ -11,7 +11,7 @@
   "dependencies": {
     "lucide-react": "^0.487.0",
     "mongoose": "^8.13.1",
-    "next": "15.2.8",
+    "next": "15.4.10",
     "nodemailer": "^8.0.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
