@@ -1,0 +1,128 @@
+
+> my-app@0.1.0 build
+> next build
+
+   ??? Next.js 15.2.8
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+node.exe :  ??? Compiled 
+with warnings
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: ( ??  
+  ? Compiled with warnin   
+ gs:String) [], RemoteE    
+xception
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+
+./src/components/sections/i
+ndex.js
+export 'default' 
+(reexported as 
+'HeroSection') was not 
+found in './HeroSection' 
+(possible exports: 
+HeroSection)
+
+Import trace for requested 
+module:
+./src/components/sections/i
+ndex.js
+./app/page.js
+
+ ??? Compiled with warnings
+
+./src/components/sections/C
+ontactSection.js
+Attempted import error: 
+'useFormStatus' is not 
+exported from 'react' 
+(imported as 
+'useFormStatus').
+
+Import trace for requested 
+module:
+./src/components/sections/C
+ontactSection.js
+
+ ??? Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/5) ...
+Error occurred 
+prerendering page "/". 
+Read more: https://nextjs.o
+rg/docs/messages/prerender-
+error
+Error: Element type is 
+invalid: expected a string 
+(for built-in components) 
+or a class/function (for 
+composite components) but 
+got: undefined.
+    at nF (D:\code\My 
+portfolio Sudhanshu\my-app\
+node_modules\next\dist\comp
+iled\next-server\app-page.r
+untime.prod.js:76:64389)
+    at nq (D:\code\My 
+portfolio Sudhanshu\my-app\
+node_modules\next\dist\comp
+iled\next-server\app-page.r
+untime.prod.js:76:67434)
+    at nH (D:\code\My 
+portfolio Sudhanshu\my-app\
+node_modules\next\dist\comp
+iled\next-server\app-page.r
+untime.prod.js:76:65009)
+    at nV (D:\code\My 
+portfolio Sudhanshu\my-app\
+node_modules\next\dist\comp
+iled\next-server\app-page.r
+untime.prod.js:76:70865)
+    at nz (D:\code\My 
+portfolio Sudhanshu\my-app\
+node_modules\next\dist\comp
+iled\next-server\app-page.r
+untime.prod.js:76:69548)
+    at nq (D:\code\My 
+portfolio Sudhanshu\my-app\
+node_modules\next\dist\comp
+iled\next-server\app-page.r
+untime.prod.js:76:67701)
+    at nH (D:\code\My 
+portfolio Sudhanshu\my-app\
+node_modules\next\dist\comp
+iled\next-server\app-page.r
+untime.prod.js:76:65009)
+    at nV (D:\code\My 
+portfolio Sudhanshu\my-app\
+node_modules\next\dist\comp
+iled\next-server\app-page.r
+untime.prod.js:76:70865)
+    at nF (D:\code\My 
+portfolio Sudhanshu\my-app\
+node_modules\next\dist\comp
+iled\next-server\app-page.r
+untime.prod.js:76:60898)
+    at nq (D:\code\My 
+portfolio Sudhanshu\my-app\
+node_modules\next\dist\comp
+iled\next-server\app-page.r
+untime.prod.js:76:67434)
+Export encountered an 
+error on /page: /, exiting 
+the build.
+ ??? Next.js build worker 
+exited with code: 1 and 
+signal: null

@@ -1,0 +1,59 @@
+
+> my-app@0.1.0 build
+> next build
+
+   ??? Next.js 15.2.8
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+node.exe : Failed to 
+compile.
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (Failed to com   
+ pile.:String) [],     
+RemoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+
+./src/components/sectio
+ns/SkillsSection.js
+Module not found: 
+Can't resolve 
+'@/data/skills'
+
+https://nextjs.org/docs
+/messages/module-not-fo
+und
+
+./src/components/sectio
+ns/EducationSection.js
+Module not found: 
+Can't resolve 
+'@/data/education'
+
+https://nextjs.org/docs
+/messages/module-not-fo
+und
+
+Import trace for 
+requested module:
+./src/components/sectio
+ns/index.js
+./app/page.js
+
+
+> Build failed because 
+of webpack errors

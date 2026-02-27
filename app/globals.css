@@ -1,15 +1,28 @@
 @import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
 
 :root {
-  --bg-1: #f7f8fc;
-  --bg-2: #eef2ff;
-  --bg-3: #eefbf7;
-  --surface: rgba(255, 255, 255, 0.88);
-  --surface-border: rgba(90, 120, 190, 0.24);
-  --text: #1b2b48;
-  --muted: #5f6f8a;
-  --primary: #2364ff;
-  --primary-2: #0aa88a;
+  --bg-1: #ffffff;
+  --bg-2: #f8fafc;
+  --bg-3: #f1f5f9;
+  --surface: rgba(255, 255, 255, 0.9);
+  --surface-border: rgba(226, 232, 240, 0.8);
+  --text: #0f172a;
+  --muted: #64748b;
+  --primary: #0ea5e9;
+  --primary-2: #14b8a6;
+}
+
+.dark {
+  --bg-1: #020617;
+  --bg-2: #0f172a;
+  --bg-3: #1e293b;
+  --surface: rgba(15, 23, 42, 0.7);
+  --surface-border: rgba(51, 65, 85, 0.8);
+  --text: #f8fafc;
+  --muted: #94a3b8;
+  --primary: #10b981;
+  --primary-2: #14b8a6;
 }
 
 * {
@@ -34,13 +47,25 @@ body {
     radial-gradient(circle at 12% 14%, rgba(35, 100, 255, 0.15), transparent 35%),
     radial-gradient(circle at 88% 18%, rgba(10, 168, 138, 0.13), transparent 30%),
     radial-gradient(circle at 78% 82%, rgba(255, 142, 95, 0.1), transparent 32%),
-    repeating-linear-gradient(
-      135deg,
+    repeating-linear-gradient(135deg,
       rgba(255, 255, 255, 0) 0,
       rgba(255, 255, 255, 0) 12px,
       rgba(111, 145, 255, 0.035) 12px,
-      rgba(111, 145, 255, 0.035) 13px
-    ),
+      rgba(111, 145, 255, 0.035) 13px),
+    linear-gradient(150deg, var(--bg-1), var(--bg-2) 45%, var(--bg-3));
+  background-attachment: fixed;
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at 12% 14%, rgba(16, 185, 129, 0.15), transparent 35%),
+    radial-gradient(circle at 88% 18%, rgba(20, 184, 166, 0.13), transparent 30%),
+    radial-gradient(circle at 78% 82%, rgba(14, 165, 233, 0.1), transparent 32%),
+    repeating-linear-gradient(135deg,
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0) 12px,
+      rgba(16, 185, 129, 0.02) 12px,
+      rgba(16, 185, 129, 0.02) 13px),
     linear-gradient(150deg, var(--bg-1), var(--bg-2) 45%, var(--bg-3));
   background-attachment: fixed;
 }
@@ -53,10 +78,19 @@ body {
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
+.dark .section-card {
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.4);
+}
+
 .section-card:hover {
   transform: translateY(-2px);
   border-color: rgba(67, 126, 235, 0.38);
   box-shadow: 0 20px 42px rgba(56, 72, 125, 0.16);
+}
+
+.dark .section-card:hover {
+  border-color: rgba(16, 185, 129, 0.38);
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.5);
 }
 
 .section-shell {
@@ -80,6 +114,7 @@ body {
     opacity: 0.35;
     transform: translateY(6px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
