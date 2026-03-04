@@ -1,19 +1,22 @@
 "use client";
 
 import * as React from "react";
-import { ThemeProvider as NextThemesProvider, useTheme } from "next-themes";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
+import { useTheme } from "next-themes";
 
-function ForceLightOnLoad() {
+const THEME_INIT_KEY = "theme_initialized";
+
+function InitializeThemeOnce() {
   const { setTheme } = useTheme();
-  const didInit = React.useRef(false);
 
   React.useEffect(() => {
-    if (didInit.current) return;
-    didInit.current = true;
-    if (typeof window !== "undefined") {
-      window.localStorage.removeItem("theme");
+    if (typeof window === "undefined") return;
+
+    const isInitialized = window.localStorage.getItem(THEME_INIT_KEY);
+    if (!isInitialized) {
+      setTheme("light");
+      window.localStorage.setItem(THEME_INIT_KEY, "1");
     }
-    setTheme("light");
   }, [setTheme]);
 
   return null;
@@ -22,7 +25,7 @@ function ForceLightOnLoad() {
 export function ThemeProvider({ children, ...props }) {
   return (
     <NextThemesProvider {...props}>
-      <ForceLightOnLoad />
+      <InitializeThemeOnce />
       {children}
     </NextThemesProvider>
   );

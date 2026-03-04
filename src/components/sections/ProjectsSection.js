@@ -73,7 +73,7 @@ const ProjectsSection = () => {
             type="button"
             onClick={goPrev}
             aria-label="Previous projects"
-            className="rounded-lg border border-slate-300 bg-white p-2.5 text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-sky-500 hover:text-sky-700"
+            className="rounded-lg border border-slate-300 bg-white p-2.5 text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-sky-500 hover:text-sky-700 dark:border-emerald-500/40 dark:bg-slate-800 dark:text-emerald-300 dark:shadow-black/25 dark:hover:border-emerald-300 dark:hover:bg-slate-700 dark:hover:text-emerald-200"
           >
             <ChevronLeft size={18} />
           </button>
@@ -81,7 +81,7 @@ const ProjectsSection = () => {
             type="button"
             onClick={goNext}
             aria-label="Next projects"
-            className="rounded-lg border border-slate-300 bg-white p-2.5 text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-sky-500 hover:text-sky-700"
+            className="rounded-lg border border-slate-300 bg-white p-2.5 text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-sky-500 hover:text-sky-700 dark:border-emerald-500/40 dark:bg-slate-800 dark:text-emerald-300 dark:shadow-black/25 dark:hover:border-emerald-300 dark:hover:bg-slate-700 dark:hover:text-emerald-200"
           >
             <ChevronRight size={18} />
           </button>

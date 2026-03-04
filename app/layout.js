@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { SiteNav } from "@/components/navigation";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+          <SiteNav />
           {children}
         </ThemeProvider>
       </body>

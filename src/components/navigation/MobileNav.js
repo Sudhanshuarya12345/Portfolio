@@ -35,8 +35,8 @@ const MobileNav = ({ items = [] }) => {
             <nav className="flex flex-col space-y-4">
               {items.map((item) => (
                 <a
-                  key={item.id}
-                  href={`#${item.id}`}
+                  key={item.id ?? item.href}
+                  href={item.href ?? `#${item.id}`}
                   onClick={() => setIsOpen(false)}
                   className="rounded-md border border-transparent px-3 py-2 text-lg text-slate-700 transition hover:border-slate-200 hover:bg-slate-50 hover:text-sky-700"
                 >
