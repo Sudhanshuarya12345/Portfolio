@@ -61,31 +61,31 @@ const ContactSection = () => {
                         </p>
 
                         <div className="mt-7 space-y-4">
-                            <div className="flex items-center gap-3 rounded-xl border border-white/80 bg-white/70 px-4 py-3 dark:border-emerald-500/20 dark:bg-slate-900/50">
-                                <Mail size={19} className="text-sky-700 dark:text-emerald-400" />
+                            <div className="flex items-start gap-3 rounded-xl border border-white/80 bg-white/70 px-4 py-3 dark:border-emerald-500/20 dark:bg-slate-900/50">
+                                <Mail size={19} className="mt-0.5 shrink-0 text-sky-700 dark:text-emerald-400" />
                                 <a
                                     href="mailto:sudhanshuarya81022@gmail.com"
-                                    className="text-base font-medium text-slate-700 transition hover:text-sky-700 dark:text-slate-300 dark:hover:text-emerald-400"
+                                    className="min-w-0 text-base font-medium text-slate-700 transition hover:text-sky-700 dark:text-slate-300 dark:hover:text-emerald-400"
                                 >
                                     sudhanshuarya81022@gmail.com
                                 </a>
                             </div>
-                            <div className="flex items-center gap-3 rounded-xl border border-white/80 bg-white/70 px-4 py-3 dark:border-emerald-500/20 dark:bg-slate-900/50">
-                                <Phone size={19} className="text-teal-600 dark:text-emerald-400" />
+                            <div className="flex items-start gap-3 rounded-xl border border-white/80 bg-white/70 px-4 py-3 dark:border-emerald-500/20 dark:bg-slate-900/50">
+                                <Phone size={19} className="mt-0.5 shrink-0 text-teal-600 dark:text-emerald-400" />
                                 <a
                                     href="tel:+919142560399"
-                                    className="text-base font-medium text-slate-700 transition hover:text-sky-700 dark:text-slate-300 dark:hover:text-emerald-400"
+                                    className="min-w-0 text-base font-medium text-slate-700 transition hover:text-sky-700 dark:text-slate-300 dark:hover:text-emerald-400"
                                 >
                                     +91 9142560399
                                 </a>
                             </div>
-                            <div className="flex items-center gap-3 rounded-xl border border-white/80 bg-white/70 px-4 py-3 dark:border-emerald-500/20 dark:bg-slate-900/50">
-                                <Linkedin size={18} className="text-sky-700 dark:text-emerald-400" />
+                            <div className="flex items-start gap-3 rounded-xl border border-white/80 bg-white/70 px-4 py-3 dark:border-emerald-500/20 dark:bg-slate-900/50">
+                                <Linkedin size={18} className="mt-0.5 shrink-0 text-sky-700 dark:text-emerald-400" />
                                 <a
                                     href="https://linkedin.com/in/sudhanshu-kumar-966262283"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-base font-medium text-slate-700 transition hover:text-sky-700 dark:text-slate-300 dark:hover:text-emerald-400"
+                                    className="min-w-0 text-base font-medium text-slate-700 transition hover:text-sky-700 dark:text-slate-300 dark:hover:text-emerald-400"
                                 >
                                     LinkedIn Profile
                                 </a>

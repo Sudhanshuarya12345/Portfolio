@@ -69,6 +69,12 @@ const ProjectsSection = () => {
           <h2 className="text-4xl font-semibold text-sky-700 md:text-5xl dark:text-slate-50">Projects</h2>
 
         <div className="flex items-center gap-2">
+          <Link
+            href="/project"
+            className="ml-1 inline-flex items-center rounded-lg border border-sky-300/80 bg-gradient-to-r from-sky-50 to-teal-50 px-4 py-2 text-base font-semibold text-sky-700 shadow-sm transition hover:-translate-y-0.5 hover:border-sky-500 hover:from-sky-100 hover:to-teal-100 hover:shadow-md dark:border-emerald-500/30 dark:from-emerald-400/10 dark:to-teal-400/10 dark:text-emerald-400 dark:hover:border-emerald-400 dark:hover:from-emerald-400/20 dark:hover:to-teal-400/20"
+          >
+            View All Projects
+          </Link>
           <button
             type="button"
             onClick={goPrev}
@@ -85,12 +91,6 @@ const ProjectsSection = () => {
           >
             <ChevronRight size={18} />
           </button>
-          <Link
-            href="/project"
-            className="ml-1 inline-flex items-center rounded-lg border border-sky-300/80 bg-gradient-to-r from-sky-50 to-teal-50 px-4 py-2 text-base font-semibold text-sky-700 shadow-sm transition hover:-translate-y-0.5 hover:border-sky-500 hover:from-sky-100 hover:to-teal-100 hover:shadow-md dark:border-emerald-500/30 dark:from-emerald-400/10 dark:to-teal-400/10 dark:text-emerald-400 dark:hover:border-emerald-400 dark:hover:from-emerald-400/20 dark:hover:to-teal-400/20"
-          >
-            View All Projects
-          </Link>
         </div>
         </div>
       </ScrollAnimation>
